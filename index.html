@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cacao Büro</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <a href="/" class="logo">
+      <img src="img/logo.svg" alt="Cacao Büro logo">
+    </a>
+    <h1>Contact Us</h1>
+    <form>
+      <div class="input-group">
+        <label for="name">name</label>
+        <input type="text" required name="name" id="name" placeholder="Enter your name here">
+      </div>
+      <div class="input-group">
+        <label for="email">email</label>
+        <input type="email" required name="email" id="email" placeholder="Enter your email here">
+      </div>
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Your message goes here"></textarea>
+      </div>
+      <div class="input-group">
+        <input type="submit" value="Send">
+      </div>
+    </form>
+    <footer>Copyright &copy; <span></span> Cacao Büro.</footer>
+  </main>
+  <script>
+    const year = document.querySelector('footer span');
+    const date = new Date();
+    year.innerHTML = date.getFullYear();
+  </script>
+</body>
+
+</html>
